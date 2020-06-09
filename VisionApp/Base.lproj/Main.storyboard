@@ -54,13 +54,6 @@
                                     <constraint firstItem="grH-8d-VLj" firstAttribute="leading" secondItem="HBC-d9-v1W" secondAttribute="leading" constant="10" id="m1G-cr-ADc"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UhX-g7-SWy" customClass="RoundedShadowImageView" customModule="VisionApp" customModuleProvider="target">
-                                <rect key="frame" x="240" y="578" width="120" height="200"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="KYq-x6-Cjf"/>
-                                    <constraint firstAttribute="width" constant="120" id="h3S-KI-I91"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AqT-UY-NQt" customClass="RoundedShadowButton" customModule="VisionApp" customModuleProvider="target">
                                 <rect key="frame" x="15" y="741" width="110" height="37"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -71,7 +64,21 @@
                                 <state key="normal" title="FLASH OFF">
                                     <color key="titleColor" red="0.84705882352941175" green="0.27843137254901962" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onFlashButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1q2-oH-eUc"/>
+                                </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UhX-g7-SWy" customClass="RoundedShadowImageView" customModule="VisionApp" customModuleProvider="target">
+                                <rect key="frame" x="240" y="578" width="120" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="KYq-x6-Cjf"/>
+                                    <constraint firstAttribute="width" constant="120" id="h3S-KI-I91"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="SF3-3u-JP0">
+                                <rect key="frame" x="281.66666666666669" y="659.66666666666663" width="37" height="37"/>
+                                <color key="color" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -83,8 +90,10 @@
                             <constraint firstItem="HBC-d9-v1W" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="g3f-N2-uC9"/>
                             <constraint firstItem="7Ac-E9-6tQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gE3-rK-EM0"/>
                             <constraint firstItem="7Ac-E9-6tQ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="jZO-xC-x8H"/>
+                            <constraint firstItem="UhX-g7-SWy" firstAttribute="centerY" secondItem="SF3-3u-JP0" secondAttribute="centerY" id="m5J-DU-DZl"/>
                             <constraint firstItem="AqT-UY-NQt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="mhJ-zK-sQm"/>
                             <constraint firstAttribute="trailing" secondItem="UhX-g7-SWy" secondAttribute="trailing" constant="15" id="p7z-rg-iTU"/>
+                            <constraint firstItem="UhX-g7-SWy" firstAttribute="centerX" secondItem="SF3-3u-JP0" secondAttribute="centerX" id="rpq-Js-yvh"/>
                             <constraint firstAttribute="trailing" secondItem="HBC-d9-v1W" secondAttribute="trailing" constant="17" id="uIp-NT-vQv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -96,6 +105,7 @@
                         <outlet property="flashBtn" destination="AqT-UY-NQt" id="dai-pE-egV"/>
                         <outlet property="identificationLbl" destination="eL6-sB-zxX" id="7IA-wx-cEm"/>
                         <outlet property="roundedLabelView" destination="HBC-d9-v1W" id="HfB-nq-GtU"/>
+                        <outlet property="spinner" destination="SF3-3u-JP0" id="Guy-T0-ojV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
