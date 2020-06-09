@@ -16,6 +16,7 @@
 		ECD5DC3C248FE37F00077865 /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5DC3B248FE37F00077865 /* RoundedShadowView.swift */; };
 		ECD5DC3E248FE47700077865 /* RoundedShadowButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5DC3D248FE47700077865 /* RoundedShadowButton.swift */; };
 		ECD5DC40248FE4DB00077865 /* RoundedShadowImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD5DC3F248FE4DB00077865 /* RoundedShadowImageView.swift */; };
+		ECD5DC42248FF2A500077865 /* SqueezeNet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = ECD5DC41248FF2A500077865 /* SqueezeNet.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		ECD5DC3B248FE37F00077865 /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
 		ECD5DC3D248FE47700077865 /* RoundedShadowButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButton.swift; sourceTree = "<group>"; };
 		ECD5DC3F248FE4DB00077865 /* RoundedShadowImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowImageView.swift; sourceTree = "<group>"; };
+		ECD5DC41248FF2A500077865 /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		ECD5DC3A248FDE2500077865 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ECD5DC41248FF2A500077865 /* SqueezeNet.mlmodel */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 				ECD5DC3C248FE37F00077865 /* RoundedShadowView.swift in Sources */,
 				ECD5DC3E248FE47700077865 /* RoundedShadowButton.swift in Sources */,
 				ECD5DC29248FDDE500077865 /* CameraVC.swift in Sources */,
+				ECD5DC42248FF2A500077865 /* SqueezeNet.mlmodel in Sources */,
 				ECD5DC25248FDDE500077865 /* AppDelegate.swift in Sources */,
 				ECD5DC40248FE4DB00077865 /* RoundedShadowImageView.swift in Sources */,
 				ECD5DC27248FDDE500077865 /* SceneDelegate.swift in Sources */,
